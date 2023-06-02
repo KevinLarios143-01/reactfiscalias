@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/Home.css";
-import logo from "../images/MP_logo.png";
+//import logo from "../images/MP_logo.png";
+
+import logo from "../images/lofis.png";
 function Home() {
     return (
         <div className="welcome-container">
