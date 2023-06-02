@@ -4,10 +4,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Home from "./pages/Home";
-import AddEdit from "./pages/AddEdit";
-import View from "./pages/View";
+import Fiscalias from "./pages/fiscalias/Fiscalias";
+import AgregarFis from "./pages/fiscalias/AgregarFis";
+import EditarFis from "./pages/fiscalias/EditarFis";
+import FiscaliaID from "./pages/fiscalias/FiscaliaId";
 import About from "./pages/About";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 
 
@@ -15,21 +17,22 @@ import Header from "./components/Header";
 function App() {
     return (
 
-      <BrowserRouter>
-          <div className="App">
-              <Header />
-              <ToastContainer />
-              <Routes>
-                  <Route exact path="/" element={<Home />}  />
-                  <Route exact path="/add" element={<AddEdit />}  />
-                  <Route exact path="/edit/:id" element={<AddEdit />}  />
-                  <Route exact path="/view/:id" element={<View />}  />
-                  <Route exact path="/about" element={<About />}  />
-              </Routes>
-          </div>
-      </BrowserRouter >
-  );
-    
+        <BrowserRouter>
+            <div className="App">
+                <Navbar></Navbar>
+                <ToastContainer />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/fiscalias" element={<Fiscalias />} />
+                    <Route path="/addfis" element={<AgregarFis />} />
+                    <Route path="/editfis/:id" element={<EditarFis />} />
+                    <Route path="/fisid/:id" element={<FiscaliaID />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </div>
+        </BrowserRouter >
+    );
+
 }
 
 export default App;
