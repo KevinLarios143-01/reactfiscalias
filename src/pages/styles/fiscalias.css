@@ -1,35 +1,120 @@
 .fiscalia-card {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-  }
-  
-  .fiscalia-nombre {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .fiscalia-ubicacion {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .ver-telefonos-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #222;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .ver-telefonos-button:hover {
-    background-color: #555;
-  }
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.fiscalia-nombre {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.fiscalia-ubicacion {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.fiscalia-ubicacion span {
+  font-weight: bold;
+}
+
+.fiscalia-ubicacion .ubicacion-direccion {
+  display: block;
+}
+
+.fiscalia-ubicacion .ubicacion-datos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.fiscalia-ubicacion .ubicacion-dato {
+  margin-right: 10px;
+}
+
+
+.numeros-telefono-list {
+  margin-top: 16px;
+}
+
+.numeros-telefono-list p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.numeros-telefono-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.numeros-telefono-list li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.ver-telefonos-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ver-telefonos-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilos para el título del modal */
+.modal h2 {
+  margin-top: 0;
+}
+
+/* Estilos para la lista de números de teléfono */
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para cada elemento de la lista */
+.modal li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de cerrar */
+.modal button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de cerrar al pasar el cursor sobre él */
+.modal button:hover {
+  background-color: #0056b3;
+}
+
