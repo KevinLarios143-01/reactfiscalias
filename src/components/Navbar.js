@@ -13,6 +13,9 @@ const Navbar = () => {
           <Link to="/fiscalias" className="navbar-link">Fiscalias</Link>
         </li>
         <li className="navbar-item">
+          <Link to="/admin" className="navbar-link">Administración</Link>
+        </li>
+        <li className="navbar-item">
           <Link to="/about" className="navbar-link">Acerca</Link>
         </li>
       </ul>

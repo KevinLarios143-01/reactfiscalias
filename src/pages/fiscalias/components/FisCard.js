@@ -56,7 +56,7 @@ const FisCard = ({ fiscaliac }) => {
     let Departamento = ubicacion ? ubicacion.Departamento : '';
     let Municipio = ubicacion ? ubicacion.Municipio : '';
 
-    let junto = Pais + ', ' + Departamento + ', ' + Municipio;
+    let junto = Municipio + ', ' + Departamento + ', ' + Pais;
     return junto;
   };
 
@@ -74,6 +74,10 @@ const FisCard = ({ fiscaliac }) => {
               <li key={numero.Id}>{numero.NumeroTelefono}</li>
             ))}
           </ul>
+
+          <button className="ver-telefonos-button" onClick={mostrarNumerosTelefono1}>
+            Ver números de teléfono
+          </button>
         </div>
       )}
       <ReactModal
@@ -82,19 +86,18 @@ const FisCard = ({ fiscaliac }) => {
         contentLabel="Números de teléfono"
         className="modal"
       >
-        <h2>Números de teléfono de {fiscaliac.Nombre}</h2>
-        <ul>
-          {numerosTelefono.map(numero => (
-            <li key={numero.Id}>{numero.NumeroTelefono}</li>
-          ))}
-        </ul>
+        <center>
+
+          <h2>Números de teléfono de {fiscaliac.Nombre}</h2>
+          <ul>
+            {numerosTelefono.map(numero => (
+              <li key={numero.Id}>{numero.NumeroTelefono}</li>
+            ))}
+          </ul>
+        </center>
         <button onClick={() => setModalOpen(false)}>Cerrar</button>
       </ReactModal>
 
-
-      <button className="ver-telefonos-button" onClick={mostrarNumerosTelefono1}>
-        Ver números de teléfono
-      </button>
     </div>
   );
 };
