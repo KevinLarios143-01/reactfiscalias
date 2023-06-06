@@ -118,3 +118,65 @@
   background-color: #0056b3;
 }
 
+
+
+.insertar-fiscalia {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.insertar-fiscalia h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.insertar-fiscalia form {
+  display: flex;
+  flex-direction: column;
+}
+
+.insertar-fiscalia label {
+  margin-bottom: 10px;
+}
+
+.insertar-fiscalia input,
+.insertar-fiscalia select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.insertar-fiscalia button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.insertar-fiscalia button:hover {
+  background-color: #0056b3;
+}
+
+.insertar-fiscalia .regresar-btn {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+.mensaje {
+  color: green;
+  font-weight: bold;
+}
+
+
+

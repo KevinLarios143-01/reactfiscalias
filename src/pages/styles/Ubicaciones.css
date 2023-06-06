@@ -1,0 +1,72 @@
+.insertar-ubicacion {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .insertar-ubicacion h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .insertar-ubicacion form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .insertar-ubicacion label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .insertar-ubicacion .select-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .insertar-ubicacion .submit-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .insertar-ubicacion .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .insertar-ubicacion p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+    /* Agrega estilos al botón de regresar */
+.regresar-btn {
+    display: block;
+    padding: 8px 16px;
+    background-color: #ccc;
+    color: #393737;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .regresar-btn:hover {
+    background-color: #aaa;
+  }
+  
+    
+  

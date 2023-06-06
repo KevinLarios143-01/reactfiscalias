@@ -27,12 +27,13 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/fiscalias" element={<Fiscalias />} />
-                    <Route path="/addfis" element={<AgregarFis />} />
-                    <Route path="/editfis/:id" element={<EditarFis />} />
                     <Route path="/fisid/:id" element={<FiscaliaID />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/admin" element={<AdminPanel />} />
                     <Route path="/admin/agregar-telefono" element={<AgregarTel />} />
+                    <Route path="/admin/crear-ubicacion" element={<CrearUbi />} />
+                    <Route path="/admin/crear-fiscalia" element={<AgregarFis />} />
+                    <Route path="/admin/actualizar-fiscalia" element={<EditarFis />} />
                     
                 </Routes>
             </div>

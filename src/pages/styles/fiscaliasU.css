@@ -1,0 +1,61 @@
+/* fiscalias.css */
+
+.insertar-fiscalia {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.insertar-fiscalia h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.insertar-fiscalia form {
+  margin-bottom: 20px;
+}
+
+.insertar-fiscalia label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.insertar-fiscalia input[type="text"],
+.insertar-fiscalia select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.insertar-fiscalia button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.insertar-fiscalia .regresar-btn {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.insertar-fiscalia .mensaje {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #dff0d8;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  color: #155724;
+}
